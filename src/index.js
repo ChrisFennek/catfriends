@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Card from './Card';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
+import { cats } from "./cats"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <Card id={cats[0].id} name={cats[0].name} age={cats[0].age} />
+      <Card id={cats[1].id} name={cats[1].name} age={cats[1].age} />
+      <Card id={cats[2].id} name={cats[2].name} age={cats[2].age} />
+      <Card id={cats[3].id} name={cats[3].name} age={cats[3].age} />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
