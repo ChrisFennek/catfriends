@@ -1,13 +1,12 @@
-export const cats = [
-  {
+export const cats = [{
     id: 1,
-    name: "Jack",
+    name: "Pixie",
     age: "6",
     food: "Tuna"
   },
   {
     id: 2,
-    name: "Finn",
+    name: "Miau",
     age: "4",
     food: "Shrimps"
   },
@@ -19,7 +18,7 @@ export const cats = [
   },
   {
     id: 4,
-    name: "Pixie",
+    name: "Jack",
     age: "5",
     food: "Duck"
   }
