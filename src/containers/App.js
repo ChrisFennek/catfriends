@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import CardList from "./CardList";
-import SearchBox from "./SearchBox";
-import { cats } from "./cats";
-import Scroll from "./Scroll";
+import CardList from "../components/CardList";
+import SearchBox from "../components/SearchBox";
+import { cats } from "../cats";
+import Scroll from "../components/Scroll";
 import "./App.css";
 
 
@@ -26,8 +26,8 @@ class App extends Component {
   }
 
   render() {
-    const filteredCats = this.state.cats.filter(cats => {
-      return cats.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+    const filteredCats = this.state.cats.filter(cat => {
+      return cat.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
     })
     return (
       <div className="tc">
