@@ -30,6 +30,12 @@ export const cats = [{
 },
 {
   id: 6,
+  name: "Zelda",
+  age: "5",
+  food: "Pancakes"
+},
+{
+  id: 7,
   name: "Leona",
   age: "9",
   food: "Lobster"
