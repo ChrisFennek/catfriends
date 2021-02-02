@@ -1,20 +1,17 @@
-import React, {
-  Component
-} from 'react';
+import React, { Component } from 'react';
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
-import {
-  cats
-} from "../cats";
+import { cats } from "../cats";
 import Scroll from "../components/Scroll";
 import "./App.css";
 
 class App extends Component {
-
-  this.state = {
-    cats: [],
-    searchfield: ""
-
+  constructor() {
+    super()
+    this.state = {
+      cats: [],
+      searchfield: ""
+    }
   }
 
   componentDidMount() {
@@ -35,22 +32,14 @@ class App extends Component {
     const filteredCats = this.state.cats.filter(cat => {
       return cat.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
     })
-    return ( <
-      div className = "tc" >
-      <
-      h1 className = "f1" > CatFriends < /h1> <
-      SearchBox searchChange = {
-        this.onSearchChange
-      }
-      /> <
-      Scroll >
-      <
-      CardList cats = {
-        filteredCats
-      }
-      /> <
-      /Scroll> <
-      /div>
+    return (
+      <div className="tc">
+        <h1 className="f1">CatFindr</h1>
+        <SearchBox searchChange={this.onSearchChange} />
+        <Scroll>
+          <CardList cats={filteredCats} />
+        </Scroll>
+      </div>
     );
   }
 }
