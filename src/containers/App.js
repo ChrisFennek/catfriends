@@ -28,10 +28,9 @@ class App extends Component {
     const filteredCats = this.state.cats.filter(cat => {
       return cat.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
     })
-    if (this.state.cats.length === 0) {
-      return <h1 className="tc f1">Lädt</h1>
-    } else {
-      return (
+    return !this.state.cats.length ?
+      <h1 className="tc f1">Lädt</h1> :
+      (
         <div className="tc">
           <h1 className="f1">CatFindr</h1>
           <SearchBox searchChange={this.onSearchChange} />
@@ -40,7 +39,6 @@ class App extends Component {
           </Scroll>
         </div>
       );
-    }
   }
 }
 
