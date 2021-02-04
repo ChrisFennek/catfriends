@@ -6,7 +6,7 @@ export const cats = [{
   },
   {
     id: 2,
-    name: "Miau",
+    name: "Daria",
     age: "4",
     food: "Shrimps"
   },

@@ -1,11 +1,4 @@
 body {
-  background: #01093A;
-  background: -webkit-linear-gradient(top, #01093A, #0E141E);
-  background: -moz-linear-gradient(top, #01093A, #0E141E);
-  background: linear-gradient(to bottom, #01093A, #0E141E);
-}
 
-h1 {
-  font-weight: 600;
-  color: #009cfd;
+  background: #3f72af;
 }
