@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function SearchBox({ searchChange }) {
   return (
-    <div className="pa2">
+    <div className="mv4">
       <input
-        className="pa3 ba b--green bg-lightest-blue"
+        className="tc pa3 ba br4 f4 b--black-025 lightest-blue bg-navy"
         type="search"
-        placeholder="Katzen finden"
+        placeholder="Find cats"
         onChange={searchChange} />
     </div>
   );

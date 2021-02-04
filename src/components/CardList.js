@@ -12,6 +12,7 @@ const CardList = ({ cats }) => {
               id={cats[i].id}
               name={cats[i].name}
               age={cats[i].age}
+              food={cats[i].food}
             />
           );
         })
