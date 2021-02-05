@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/catfriends/static/css/main.8e13a88b.chunk.css",
-    "main.js": "/catfriends/static/js/main.09996043.chunk.js",
-    "main.js.map": "/catfriends/static/js/main.09996043.chunk.js.map",
+    "main.js": "/catfriends/static/js/main.f5a3261c.chunk.js",
+    "main.js.map": "/catfriends/static/js/main.f5a3261c.chunk.js.map",
     "runtime-main.js": "/catfriends/static/js/runtime-main.d7b642e2.js",
     "runtime-main.js.map": "/catfriends/static/js/runtime-main.d7b642e2.js.map",
     "static/css/2.31461e4f.chunk.css": "/catfriends/static/css/2.31461e4f.chunk.css",
@@ -15,6 +15,7 @@
     "static/css/main.8e13a88b.chunk.css.map": "/catfriends/static/css/main.8e13a88b.chunk.css.map",
     "static/js/2.bc5dd2ae.chunk.js.LICENSE.txt": "/catfriends/static/js/2.bc5dd2ae.chunk.js.LICENSE.txt",
     "static/js/3.2c031052.chunk.js.LICENSE.txt": "/catfriends/static/js/3.2c031052.chunk.js.LICENSE.txt",
+    "static/media/kitty.ac3ba4a0.gif": "/catfriends/static/media/kitty.ac3ba4a0.gif",
     "static/media/meow.f1798a6c.mp3": "/catfriends/static/media/meow.f1798a6c.mp3"
   },
   "entrypoints": [
@@ -22,6 +23,6 @@
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.bc5dd2ae.chunk.js",
     "static/css/main.8e13a88b.chunk.css",
-    "static/js/main.09996043.chunk.js"
+    "static/js/main.f5a3261c.chunk.js"
   ]
 }
