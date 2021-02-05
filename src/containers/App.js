@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import { cats } from "../cats";
-import ErrorBoundry from "../components/ErrorBoundry"
+import ErrorBoundry from "../components/ErrorBoundry";
+import kitty from "../img/kitty.gif";
 
 import "./App.css";
 
@@ -24,7 +25,9 @@ function App() {
       <div className="tc">
         <SearchBox searchChange={onSearchChange} />
         <ErrorBoundry>
-          {!filteredCats.length ? <h1 className="white ma5 f1">No Kitty found :(</h1> : <CardList cats={filteredCats} />}
+          {!filteredCats.length ?
+            <h1 className="white ma5 f1"><img src={kitty} alt="confused cat gif" /></h1> :
+            <CardList cats={filteredCats} />}
         </ErrorBoundry>
       </div>
     );
