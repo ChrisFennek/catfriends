@@ -12,9 +12,9 @@ export const cats = [{
   },
   {
     id: 3,
-    name: "Pepper",
+    name: "Zeph",
     age: "1",
-    food: "Chicken"
+    food: "Sushi"
   },
   {
     id: 4,
