@@ -18,15 +18,15 @@ export const cats = [{
   },
   {
     id: 4,
-    name: "Bill",
+    name: "Jack",
     age: "7",
     food: "Ham"
   },
   {
     id: 5,
-    name: "Toga",
+    name: "Niki",
     age: "3",
-    food: "Rice"
+    food: "Kimchi"
   },
   {
     id: 6,
@@ -44,7 +44,7 @@ export const cats = [{
     id: 8,
     name: "Laura",
     age: "1",
-    food: "Fish"
+    food: "KBBQ"
   },
   {
     id: 9,
