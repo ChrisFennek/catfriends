@@ -20,7 +20,7 @@ const Card = ({ name, age, id, food }) => {
     play();
   };
 
-  return count === 15 ? <div onClick={handleClick} className="tc helvetica bg-red white dib br4 pa4 ma3 grow shadow-5 pointer">
+  return count === 15 ? <div onClick={handleClick} className="tc bg-red white dib br4 pa4 ma3 grow shadow-5 pointer">
     <img src={`https://robohash.org/set_set4/${id}?size=200x200`} alt="kitties" />
     <div>
       <h1 className="white disable-select">MIAU</h1>
@@ -28,12 +28,18 @@ const Card = ({ name, age, id, food }) => {
       <p className="white disable-select">Miau</p>
     </div>
   </div> : (
-      <div onClick={handleClick} className="tc helvetica greyCard dib br4 pa4 ma3 grow shadow-5 pointer">
-        <img className="disable-select" src={`https://robohash.org/set_set4/${id}?size=200x200`} alt="kitties" />
-        <div>
-          <h1 className="disable-select">{name}</h1>
+      <div onClick={handleClick} className="tc greyCard dib ma3 grow shadow-5 pointer">
+
+        <div className="pic-background">
+          <h3 className="disable-select">{name}</h3>
+          <div className="ma3">
+            <img className="disable-select kitty-img" src={`https://robohash.org/set_set4/${id}?size=150x150`} alt="kitties" />
+          </div>
+        </div>
+        <div className="content">
           <p className="disable-select">Age: {age}</p>
           <p className="disable-select">Fav Food: {food}</p>
+          <p className="disable-select desc">{name} Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ut dolorem dolores dolorum dicta, nostrum aspernatur voluptate, maxime odit quae.</p>
         </div>
       </div>
     );
